@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sai-utility-kit"
+version = "0.1.0"
+description = "A compact Python utility package for text normalization and analysis."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Sai Surya Vinay" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/saisuryavinay/TestPyPI-"
+Issues = "https://github.com/saisuryavinay/TestPyPI-/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
